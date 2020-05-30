@@ -1,0 +1,8 @@
+FROM python
+MAINTAINER  mukesh kumar mahto
+RUN  mkdir  /mycode
+#  it will create a directory inside docker image
+COPY   hello.py   /mycode/hello.py
+#    base location of  main system   to  docker  images
+#  copy will only  take current working directory
+CMD  python  /mycode/hello.py
